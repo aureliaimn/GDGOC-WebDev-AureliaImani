@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration Mini Site</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>GDGoC ITS – Event Registration Mini Site</h1>
+        <p class="tagline">
+            Learn HTML, CSS, and JavaScript by building a real mini project.
+        </p>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h2>About GDGoC</h2>
+            <p>
+                Google Developer Group (GDG) adalah komunitas yang didukung oleh Google untuk para pengembang dan
+                profesional teknologi. GDGoC ITS adalah chapter resmi GDG di Institut Teknologi Sepuluh Nopember
+                (ITS) yang bertujuan untuk menyediakan platform bagi mahasiswa dan pengembang di ITS untuk belajar,
+                berbagi pengetahuan, dan berkolaborasi dalam berbagai teknologi Google serta tren terbaru di dunia
+                pengembangan perangkat lunak.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>What Will You Learn</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Event Registration</h2>
+            <form id="registration-form" class="form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="level">Experience Level</label>
+                    <select id="level" name="level">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-group form-group-inline">
+                    <label for="join-wa">
+                        <input id="join-wa" name="join-wa" type="checkbox" />
+                        Join WhatsApp group
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary">Register</button>
+
+                <p id="error-message" class="message error"></p>
+                <p id="success-message" class="message success"></p>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Registered Participants</h2>
+            <ul id="participants-list" class="participants-list"></ul>
+        </section>
+
+        <section class="card">
+            <h2>Information Contact</h2>
+            <div class="contact-social">
+            <a href="https://instagram.com/gdgoc.its" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+            </a>
+            <a href="https://linkedin.com/company/googledevelopersgroup/" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png">
+            </a>
+            <a href="https://github.com/acaryawibawantra/Modul-Web-Development/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+            </a>
+            </div>
+        </section>
+
+      <button id="theme-toggle">🌙 Dark Mode</button>
+    </main>
+
+    <footer class="site-footer">
+        <p>Built for GDGoC ITS Web Foundations.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
